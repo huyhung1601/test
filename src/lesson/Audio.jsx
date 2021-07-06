@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react'
-import one from './asset/one.mp3'
-import two from './asset/two.mp3'
+import one from '../asset/one.mp3'
+import two from '../asset/two.mp3'
 
 
 const audioFiles = [ one, two]

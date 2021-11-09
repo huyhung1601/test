@@ -7,23 +7,28 @@ import About from './pages/about/About'
 import Shop from './pages/shop/Shop'
 import ShopItem from './components/shopItem/ShopItem'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Jstest from './js/Jstest'
+import MemoCallback from './memoCallback/MemoCallback'
 export default function App() {
 
   return (
-    <Router>
-    <GlobalProvider>
-      <div className="app">
-        <Nav/>
-        <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/about" component={About} />
-          <Route path="/shop" exact component={Shop} />
-          <Route path="/shop/:id" component={ShopItem}/>
-        </Switch>
+    <>
+      <MemoCallback/>
+    </>
+    // <Router>
+    // <GlobalProvider>
+    //   <div className="app">
+    //     <Nav/>
+    //     <Switch>
+    //       <Route path="/" exact component={Home}/>
+    //       <Route path="/about" component={About} />
+    //       <Route path="/shop" exact component={Shop} />
+    //       <Route path="/shop/:id" component={ShopItem}/>
+    //     </Switch>
 
-      </div>
-    </GlobalProvider>
-    </Router>
+    //   </div>
+    // </GlobalProvider>
+    // </Router>
   )
 }
 

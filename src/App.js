@@ -9,11 +9,16 @@ import ShopItem from './components/shopItem/ShopItem'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Jstest from './js/Jstest'
 import MemoCallback from './memoCallback/MemoCallback'
+import { TestProvider } from './context/test/TestContext'
+import Es6 from './es6/Es6'
 export default function App() {
 
   return (
     <>
-      <MemoCallback/>
+    <TestProvider>
+      <Es6/>
+      {/* <MemoCallback/> */}
+      </TestProvider>
     </>
     // <Router>
     // <GlobalProvider>

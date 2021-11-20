@@ -1,7 +1,9 @@
-import React, { useState,useCallback, useMemo } from 'react'
+import React, { useState,useCallback, useMemo, useContext } from 'react'
+import { TestContext } from '../context/test/TestContext'
 import Child from './Child'
 
 const MemoCallback = () => {
+
     const [localNumber, setLocalNumber] = useState(0)
     const [childNumber, setChildNumber] = useState(0)
     const [arr,setArr] = useState([1,2,3,4,5,6,7,8,9,10,11]);
